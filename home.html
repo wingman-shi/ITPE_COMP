@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home- WIT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('witbackground.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .main-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+    }
+
+    .welcome-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .welcome-text h1 {
+      font-size: 36px;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+    }
+
+    .college-section {
+      margin-top: 50px;
+    }
+
+    .college-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .departments {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      font-size: 18px;
+    }
+
+    .departments span {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid white;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="welcome-section">
+      <div class="welcome-text">
+        <h1>Welcome to WIT</h1>
+      </div>
+      <img src="wit.jpg" alt="WIT Logo" class="logo" />
+    </div>
+
+    <div class="college-section">
+      <h2>College of Engineering</h2>
+      <div class="departments">
+        <span>IT</span>
+        <span>EE</span>
+        <span>ME</span>
+        <span>CompE</span>
+        <span>CE</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

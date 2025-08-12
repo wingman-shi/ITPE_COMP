@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WIT Student Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Tahoma, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+
+.header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 20px 0;
+      background-color: #FF8C00;
+      color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .header .logo {
+      width: 150px;
+      margin: 10px auto;
+      display: block;
+    }
+
+    .login-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus {
+      border-color: #FF8C00;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.2);
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      background-color: #FF8C00;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(255, 140, 0, 0.3);
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="wit.jpg" alt="WIT Logo" class="logo" />
+      <h1>Western Institute of Technology</h1>
+      <h2>Student Login</h2>
+    </div>
+
+    <div class="login-form">
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" required />
+        </div>
+
+         <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+        </div>
+
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      // You can add actual authentication logic here
+      window.location.href = "home.html";
+    });
+  </script>
+</body>
+</html>
